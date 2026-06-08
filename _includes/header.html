@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">{{ site.title }}</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <ul>
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

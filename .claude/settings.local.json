@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-Command *)",
+      "PowerShell($PSVersionTable.PSVersion)",
+      "PowerShell(winget install *)",
+      "PowerShell(git config *)",
+      "PowerShell($gitPath = Get-ChildItem -Path \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" -ErrorAction SilentlyContinue; if \\(-not $gitPath\\) { $gitPath = Get-ChildItem -Path \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\" -ErrorAction SilentlyContinue } ; if \\(-not $gitPath\\) { $gitPath = Get-ChildItem -Path \"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Programs\\\\Git\\\\bin\\\\git.exe\" -ErrorAction SilentlyContinue } ; if \\($gitPath\\) { Write-Output \"Found: $\\($gitPath.FullName\\)\"; exit 0 } else { Write-Output \"Not found in common locations\" })",
+      "PowerShell(Start-Process -Wait -FilePath \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\Git-2.54.0-64-bit.exe\" -ArgumentList \"/SILENT /NORESTART /NOCANCEL /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS /COMPONENTS=`\"ext,assoc,shell,autoupdate`\"\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" -ErrorAction SilentlyContinue; if \\($?\\) { \"Found\" } else { \"Not found\" }; Get-ChildItem \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\" -ErrorAction SilentlyContinue; if \\($?\\) { \"Found\" } else { \"Not found\" })",
+      "PowerShell(git *)"
+    ]
+  }
+}

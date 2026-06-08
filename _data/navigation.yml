@@ -1,0 +1,12 @@
+- title: 首页
+  url: /
+- title: 关于我
+  url: /about/
+- title: 作品集
+  url: /projects/
+- title: 工作经历
+  url: /resume/
+- title: 博客
+  url: /blog/
+- title: 联系我
+  url: /contact/

@@ -1,0 +1,39 @@
+title: 魏聪 | 产品经理
+description: 互联网医疗 / 电商 / SaaS / 小程序 — 8年产品经验，专注以用户为中心的产品设计
+baseurl: ""
+url: "https://weicong2014210926.github.io"
+lang: zh-CN
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Exclude
+exclude:
+  - README.md
+  - .gitignore

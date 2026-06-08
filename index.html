@@ -1,0 +1,130 @@
+---
+layout: default
+title: 魏聪 — 产品经理个人站
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-avatar"></div>
+    <h1>魏聪</h1>
+    <p class="hero-subtitle">8 年经验产品经理 &middot; 互联网医疗 / 电商 / SaaS / 小程序</p>
+    <div class="hero-tags">
+      <span class="tag">Axure / 墨刀</span>
+      <span class="tag">数据分析</span>
+      <span class="tag">敏捷开发</span>
+      <span class="tag">团队管理</span>
+      <span class="tag">用户研究</span>
+    </div>
+    <div class="hero-data">
+      <div class="hero-data-item">
+        <div class="hero-data-number">1000万+</div>
+        <div class="hero-data-label">累计服务用户</div>
+      </div>
+      <div class="hero-data-item">
+        <div class="hero-data-number">500万</div>
+        <div class="hero-data-label">注册用户</div>
+      </div>
+      <div class="hero-data-item">
+        <div class="hero-data-number">30%+</div>
+        <div class="hero-data-label">收入增长</div>
+      </div>
+      <div class="hero-data-item">
+        <div class="hero-data-number">7人</div>
+        <div class="hero-data-label">团队管理</div>
+      </div>
+    </div>
+    <div class="hero-contact">
+      <a href="mailto:390766085@qq.com">✉ 邮箱</a>
+      <a href="https://github.com/weicong2014210926" target="_blank" rel="noopener">⌨ GitHub</a>
+      <a href="tel:17816869665">📞 电话</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">核心项目</h2>
+    <p class="section-subtitle">从 0 到 1 打造千万级用户产品</p>
+    <div class="card-grid">
+      <div class="card fade-in">
+        <div class="card-icon">🏥</div>
+        <h3>修正商城</h3>
+        <p>医疗健康管理商城，500万注册用户、4万+日活、年销售额4500万+。涵盖药品电商、互联网医院、健康科普。</p>
+        <a href="/projects/xiuzheng-mall/" class="card-link">了解详情 →</a>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🏠</div>
+        <h3>住房租赁管理平台</h3>
+        <p>公租房/保障性住房 SaaS 平台，覆盖 PC 管理端、运营平台、租客小程序三端全生命周期管理。</p>
+        <a href="/projects/housing-platform/" class="card-link">了解详情 →</a>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🕶️</div>
+        <h3>3D+AR 零售商城</h3>
+        <p>从0到1打造3D商品展示与 AR 试穿功能，用户参与度提升40%，销售转化率提升20%。</p>
+        <a href="/projects/ar-retail/" class="card-link">了解详情 →</a>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">🔧</div>
+        <h3>神汽链 SaaS</h3>
+        <p>汽修门店数字化系统，一年内累计服务5000+家门店。订单管理、库存管理、客户管理一站式方案。</p>
+        <a href="/projects/autochain/" class="card-link">了解详情 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title">最新博客</h2>
+    <p class="section-subtitle">产品方法论 &amp; 项目复盘</p>
+    <ul class="blog-list">
+      {% for post in site.posts limit:3 %}
+      <li class="blog-item fade-in">
+        <div class="blog-meta">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y年%m月%d日' }}</time>
+          {% for cat in post.categories %}
+            <span class="tag">{{ cat }}</span>
+          {% endfor %}
+        </div>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p style="margin-top: 24px;"><a href="/blog/" class="card-link">查看全部文章 →</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">工作经历</h2>
+    <p class="section-subtitle">从产品新人到独当一面的产品经理</p>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-date">2025.04 — 至今</div>
+        <div class="timeline-company">浙江久婵物联科技有限公司</div>
+        <div class="timeline-role">产品经理</div>
+        <div class="timeline-desc">主导住房租赁管理 SaaS 平台，探索 AI 技术在公租房运营管理中的应用。</div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-date">2022.08 — 2025.03</div>
+        <div class="timeline-company">修正药业</div>
+        <div class="timeline-role">产品经理</div>
+        <div class="timeline-desc">领导 7 人团队，推动修正商城年收入从 3750 万增长至 4500 万，用户满意度提升 15%。</div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-date">2019.11 — 2022.06</div>
+        <div class="timeline-company">足购科技有限公司</div>
+        <div class="timeline-role">产品经理</div>
+        <div class="timeline-desc">从0到1完成微信小程序、3D+AR 零售商城、SaaS 门店管理系统的产品规划与落地。</div>
+      </div>
+      <div class="timeline-item fade-in">
+        <div class="timeline-date">2018.07 — 2019.10</div>
+        <div class="timeline-company">浙江神汽电子商务有限公司</div>
+        <div class="timeline-role">产品经理</div>
+        <div class="timeline-desc">负责电商产品线及汽修 SaaS 系统，从0到1搭建核心功能，服务 5000+ 家门店。</div>
+      </div>
+    </div>
+  </div>
+</section>

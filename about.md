@@ -76,5 +76,5 @@ subtitle: 软件工程出身，以用户为中心的设计思维驱动产品创�
 <h2 class="section-title" style="margin-top: 48px;">教育背景</h2>
 <div style="margin-top: 16px; padding: 24px; background: var(--color-bg-alt); border-radius: var(--radius);">
   <p style="font-size: 18px; font-weight: 600;">杭州师范大学</p>
-  <p style="font-size: 14px; color: var(--color-text-light);">软件工程 · 本科 · 2014 — 2018</p>
+  <p style="font-size: 14px; color: var(--color-text-dim);">软件工程 · 本科 · 2014 — 2018</p>
 </div>

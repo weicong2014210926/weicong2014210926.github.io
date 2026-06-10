@@ -28,7 +28,7 @@ subtitle: 欢迎交流合作
     </div>
   </div>
   <div class="contact-qr">
-    <div style="width: 180px; height: 180px; margin: 0 auto 12px; background: var(--color-bg-alt); border-radius: 8px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; color: var(--color-text-light); font-size: 14px;">
+    <div style="width: 180px; height: 180px; margin: 0 auto 12px; background: var(--color-bg-alt); border-radius: 8px; border: 1px solid var(--color-border); display: flex; align-items: center; justify-content: center; color: var(--color-text-dim); font-size: 14px;">
       微信二维码
     </div>
     <p style="font-size: 13px; color: var(--color-text-light);">扫一扫加好友</p>
